@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 int writeFile(string);
@@ -29,7 +30,7 @@ ofstream ofs;
     }
 
     ofs.close();
-    return fileName;
+    return numOfEmp;
 }
 
 int readFile(string fileName) {
@@ -63,5 +64,5 @@ int readFile(string fileName) {
     avg = total / numOfEmp;
     cout << "Average: " << avg << endl;
 
-    return fileName;
+    return numOfEmp;
 }
